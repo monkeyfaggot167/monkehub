@@ -33,6 +33,19 @@ PlayerVals:AddSlider({
 	end    
 })
 
+PlayerVals:AddSlider({
+	Name = "Gravity",
+	Min = 1,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(168,50,50),
+	Increment = 1,
+	ValueName = "Height",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.Gravity = Value
+	end    
+})
+
 PlayerVals:AddButton({
 	Name = "Noclip",
 	Callback = function()

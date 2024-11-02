@@ -83,3 +83,10 @@ PlayerVals:AddButton({
   	end    
 })
 
+PlayerVals:AddButton({
+	Name = "ChatBypasser",
+	Callback = function()
+        loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/1price/usercreation/refs/heads/main/UserCreation.lua", true))()"))()
+  	end    
+})
+
